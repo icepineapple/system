@@ -1,0 +1,10 @@
+<%= form_for book do |f| %>
+
+book :<%= f.text_field :book %><br />
+introduction :<%= f.text_field :introduction %><br />
+author :<%= f.text_field :author %><br />
+price :<%= f.text_area :price %><br />
+
+<%= f.submit %>
+
+<% end %>

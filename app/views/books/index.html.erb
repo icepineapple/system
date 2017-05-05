@@ -1,0 +1,24 @@
+ <h1>Books List</h1>
+
+  <%= link_to "add book", new_book_path %>
+
+  <table>
+    <thead>
+      <tr>
+        <td>Book</td>
+        <td>Intoduction</td>
+        <td>Author</td>
+        <td>NTD</td>
+      </tr>
+    </thead>
+    <tbody>
+      <% @books.each do |book| %>
+      <tr>
+        <td><%= book.book %></td>
+        <td><%= book.introduction %></td>
+        <td><%= book.author %></td>
+        <td><%= book.price %></td>
+      </tr>
+      <% end %>
+    </tbody>
+  </table>
